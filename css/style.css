@@ -947,7 +947,12 @@ pre {
   .info-section .hero-info ul li span {
 		color: #9c9b9b;
   }
-  
+  .resume-list h2 {
+		font-size: 40px;
+	}
+	.resume-list h3 {
+		font-size: 30px;
+	}
 }
 
 
@@ -964,7 +969,10 @@ pre {
     display: block;
   }
   .resume-list h2 {
-		font-size: 50px;
+		font-size: 40px;
+	}
+	.resume-list h3 {
+		font-size: 30px;
 	}
 
 }
