@@ -68,7 +68,6 @@ body {
   }
 
   .icon-menu{
-    
     font-size: 25px;
   }
  /*--------------------
@@ -97,6 +96,7 @@ body {
 
 .hero-image {
   padding-top: 70px;
+
 }
 .hero-image img{
   height: 100%;
@@ -131,6 +131,16 @@ body {
 .hero-info ul li:last-child {
 	margin-bottom: 0;
 }
+.section-title h2{
+  display: inline-block;
+  position: relative;
+  margin-bottom: 110px;
+  padding-bottom: 2px;
+  line-height:normal;
+}
+
+
+
 /* -------------
 Resume  Section
 ------------- */
@@ -198,7 +208,7 @@ Resume  Section
 	position: relative;
 }
 .certificate h2 {
-	font-size: 40px;
+	font-size: 35px;
   margin-bottom: 10px;
   color:#FFBD39;
 }
@@ -478,6 +488,10 @@ abbr[data-original-title] {
   border-bottom: 0;
   text-decoration-skip-ink: none; }
 
+  address {
+  margin-bottom: 1rem;
+  font-style: normal;
+  line-height: inherit; }
 address {
   margin-bottom: 1rem;
   font-style: normal;
@@ -559,7 +573,8 @@ figure {
 
 img {
   vertical-align: middle;
-  border-style: none; }
+  border-style: none;
+ }
 
 svg {
   overflow: hidden;
@@ -875,13 +890,85 @@ pre {
   margin-right: -15px;
   margin-left: -15px; }
 
-.no-gutters {
-  margin-right: 0;
-  margin-left: 0; }
-  .no-gutters > .col,
-  .no-gutters > [class*="col-"] {
-    padding-right: 0;
-    padding-left: 0; }
+/* Responsive */
+
+
+
+@media only screen and (max-width: 1366px) and (min-width: 1200px) {
+	.home-five-style .header-section {
+		position: relative;
+		background: #f2f7f8;
+	}
+	.container-warp {
+		min-width: 80%;
+		margin-left: 10%;
+	}
+	.hero-info ul li span {
+		min-width: 180px;
+  }
+}
+
+
+/* Tablet :768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .info-section .hero-info ul li span {
+		color: #9c9b9b;
+	}
+	.hero-info ul li {
+		margin-bottom: 30px;
+	}
+	.hero-info ul li span {
+		display: block;
+	}
+}
+
+
+/* Large Mobile :480px. */
+@media only screen and (max-width: 767px) {
+  .icon-box {
+		margin-right: 30px;
+		text-align: left;
+	}
+	.hero-text h2 {
+		font-size: 80px;
+	}.hidden-md {
+		display: none !important;
+	}
+	.resume-list {
+		margin-left: 0;
+		padding-left: 0;
+		border-left: none;
+	}.fact-box {
+		margin-bottom: 30px;
+	}
+	.header-section {
+		padding: 50px 0;
+  }
+  .info-section .hero-info ul li span {
+		color: #9c9b9b;
+  }
+  
+}
+
+
+
+/* small Mobile:320px */
+@media only screen and (max-width:479){
+  .herp-text{
+    font-size: 40px;
+  }
+  .hero-info ul li{
+    font-size: 18px;
+  }
+  .hero-info ul li span{
+    display: block;
+  }
+  .resume-list h2 {
+		font-size: 50px;
+	}
+
+}
+
 
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
 .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
@@ -10076,3 +10163,4 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
